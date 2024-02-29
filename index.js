@@ -12,15 +12,14 @@ let waterIsOn = true
 // Ride 1 works when:
 //     green wire is connected
 // let ride1PowerOn = false
-if (greenWireConnected)
-{
+    if (greenWireConnected)
+    {
     ride1PowerOn = true
-}
+    }
 
 //Ride 2 works when 
     //green and yellow wires are connected
-    if (greenWireConnected)
-    if (yellowWireConnected)
+    if (greenWireConnected && yellowWireConnected)
     {
         ride2PowerOn = true
     }
@@ -28,9 +27,7 @@ if (greenWireConnected)
     // green and red wires are connected
     // water is on 
     // yellow wire is not connected
-    if (greenWireConnected)
-    if (redWireConnected)
-    if (waterIsOn)
+    if (greenWireConnected && redWireConnected && waterIsOn || !yellowWireConnected)
     {
 ride3PowerOn = true;
     }
@@ -50,4 +47,29 @@ ride4PowerOn = true
     //if a 7 is rolled it should return "seven"
 function ride4SlotMachine(rolledNumber){
     return "nothing"
+}
+switch (rolledNumber) {
+//     case 1:
+//         return "star";
+// break;
+//     case 2:
+//         return "car";
+// break;
+//     case 3:
+//         return "pot of gold";
+// break;
+//     case 4:
+//         return "clover";
+// break;
+//     case 5:
+//         return "bowling ball";
+// break;
+//     case 6:
+//         return "tiger";
+// break;
+//     case 7:
+//         return "seven";
+// break;
+    default:
+break;
 }
