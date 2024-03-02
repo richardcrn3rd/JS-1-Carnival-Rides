@@ -19,7 +19,7 @@ if (greenWireConnected){
     //green and yellow wires are connected
 
 if (greenWireConnected && yellowWireConnected){
-ride2PowerOn = true
+    ride2PowerOn = true
 }
 //Ride 3 works when:
     // green and red wires are connected
@@ -27,13 +27,13 @@ ride2PowerOn = true
     // yellow wire is not connected
 
 if (greenWireConnected && redWireConnected && waterIsOn || !yellowWireConnected){
-ride3PowerOn = true
+    ride3PowerOn = true
 }
 //Ride 4 has power when:
     //ride wire is connected
 
 if (redWireConnected){
-ride4PowerOn = true
+    ride4PowerOn = true
 }
 //Ride 4 is a slot machine
     //if a 1 is rolled it should return "star"
@@ -44,7 +44,7 @@ ride4PowerOn = true
     //if a 6 is rolled it should return "tiger"
     //if a 7 is rolled it should return "seven"
 function ride4SlotMachine(rolledNumber){
-    return "nothing"
+    // return "nothing"
 
     switch (rolledNumber) 
     {
